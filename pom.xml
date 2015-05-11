@@ -13,7 +13,7 @@
 
     <properties>
         <project.shortName>chat</project.shortName>
-        <mainClass>com.ilyamur.comparison.ionionettychat.SwingView</mainClass>
+        <mainClass>com.ilyamur.comparison.ionionettychat.view.SwingView</mainClass>
         <workingDirectory>${project.basedir}/src/main/working</workingDirectory>
         <assemblyDirectory>${project.build.directory}/assembly/${project.name}</assemblyDirectory>
     </properties>
