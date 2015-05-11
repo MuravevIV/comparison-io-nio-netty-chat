@@ -7,7 +7,7 @@ import java.net.InetSocketAddress;
 public interface Server {
 
     public void create(InetSocketAddress inetSocketAddress,
-                       ServerOpenHandler serverOpenHandler,
+                       ServerCreateHandler serverCreateHandler,
                        FailureHandler failureHandler);
 
     public void close(ServerCloseHandler serverCloseHandler,

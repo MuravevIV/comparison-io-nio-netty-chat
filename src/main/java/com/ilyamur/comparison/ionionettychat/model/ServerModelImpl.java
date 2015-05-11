@@ -17,7 +17,7 @@ public class ServerModelImpl implements ServerModel {
 
     @Override
     public void create(InetSocketAddress inetSocketAddress,
-                       ServerOpenHandler serverOpenHandler,
+                       ServerCreateHandler serverCreateHandler,
                        FailureHandler failureHandler) {
         // todo
     }
