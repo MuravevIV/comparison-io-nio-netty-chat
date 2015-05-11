@@ -7,15 +7,26 @@ import java.awt.event.KeyEvent;
 public class SwingView implements View {
 
     private JPanel panMain;
+    /*
     private JTextField txtA;
     private JTextField txtB;
     private JTextField txtSum;
     private JTextField txtProduct;
     private JTextField txtLine;
     private JTextField txtLength;
+    */
+    private JTextArea chatTextArea;
+    private JButton sendMessageButton;
+    private JButton disconnectClientButton;
+    private JButton joinClientButton;
+    private JButton createServerButton;
+    private JTextField ipAddressTextField;
+    private JButton closeServerButton;
+    private JTextArea messageTextArea;
 
     @Override
     public void setPresenter(final Presenter presenter) {
+        /*
         txtA.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
@@ -34,51 +45,55 @@ public class SwingView implements View {
                 presenter.eventChangedLine();
             }
         });
+        */
     }
 
     @Override
     public String getA() {
-        return txtA.getText();
+        // return txtA.getText();
+        return null;
     }
 
     @Override
     public void setA(String a) {
-        txtA.setText(a);
+        // txtA.setText(a);
     }
 
     @Override
     public String getB() {
-        return txtB.getText();
+        // return txtB.getText();
+        return null;
     }
 
     @Override
     public void setB(String b) {
-        txtB.setText(b);
+        // txtB.setText(b);
     }
 
     @Override
     public String getLine() {
-        return txtLine.getText();
+        // return txtLine.getText();
+        return null;
     }
 
     @Override
     public void setLine(String line) {
-        txtLine.setText(line);
+        // txtLine.setText(line);
     }
 
     @Override
     public void setSum(String sum) {
-        txtSum.setText(sum);
+        // txtSum.setText(sum);
     }
 
     @Override
     public void setProduct(String product) {
-        txtProduct.setText(product);
+        // txtProduct.setText(product);
     }
 
     @Override
     public void setLength(String length) {
-        txtLength.setText(length);
+        // txtLength.setText(length);
     }
 
     public static void main(String[] args) {
